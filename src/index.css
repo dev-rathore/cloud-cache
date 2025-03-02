@@ -38,6 +38,8 @@
   --sidebar-accent-foreground: hsl(240 5.9% 10%);
   --sidebar-border: hsl(220 13% 91%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --gradient-1: #00a1e0;
+  --gradient-2: #3dcecc;
   --gradient: linear-gradient(to left, #00a1e0, #3dcecc) !important;
 }
 
@@ -74,6 +76,8 @@
   --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
   --sidebar-border: hsl(240 3.7% 15.9%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --gradient-1: #00a1e0;
+  --gradient-2: #3dcecc;
   --gradient: linear-gradient(to left, #00a1e0, #3dcecc) !important;
 }
 
@@ -114,7 +118,9 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-  --color-gradient: var(--gradient);
+  --color-gradient-1: var(--gradient-1);
+  --color-gradient-2: var(--gradient-2);
+  --bg-primary-gradient: var(--gradient);
 }
 
 @layer base {
@@ -123,5 +129,30 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    background-image: var(--gradient);
+  }
+
+  .text-primary-gradient {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
   }
 }

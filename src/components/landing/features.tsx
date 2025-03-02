@@ -34,7 +34,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:text-center">
           <motion.h2
-            className="text-base text-primary font-semibold tracking-wide uppercase"
+            className="text-base text-primary-gradient font-semibold tracking-wide uppercase"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

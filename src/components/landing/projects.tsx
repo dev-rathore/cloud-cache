@@ -38,7 +38,7 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl mb-4 leading-8 font-extrabold tracking-tight text-foreground sm:text-4xl">
-            Over <span className="text-primary">150+</span> completed projects and still counting
+            Over <span className="text-primary-gradient">150+</span> completed projects and still counting
           </h2>
           <p className="max-w-2xl mx-auto text-xl text-muted-foreground">
             We've helped businesses of all sizes transform their operations with Salesforce.
@@ -49,20 +49,20 @@ export default function Projects() {
           {stats.map((stat, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-primary rounded-full p-8 shadow-custom flex flex-col items-center justify-center text-center"
+              className="bg-primary-gradient rounded-full p-8 shadow-custom flex flex-col items-center justify-center text-center"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <motion.span
-                className="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-2"
+                className="text-md sm:text-3xl md:text-4xl font-bold text-white mb-2"
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
               >
                 {stat.number}
               </motion.span>
-              <span className="text-base">{stat.label}</span>
+              <span className="text-sm sm:text-base text-white">{stat.label}</span>
             </motion.div>
           ))}
         </div>
@@ -79,28 +79,28 @@ export default function Projects() {
               <h3 className="text-xl font-semibold mb-6">Our Implementation Process</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="bg-primary text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">1</div>
+                  <div className="bg-primary-gradient text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">1</div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg">Discovery</h4>
                     <p>Understanding your business needs and goals</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-primary text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">2</div>
+                  <div className="bg-primary-gradient text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">2</div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg">Planning</h4>
                     <p>Creating a roadmap for implementation</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-primary text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">3</div>
+                  <div className="bg-primary-gradient text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">3</div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg">Implementation</h4>
                     <p>Executing the plan with precision</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-primary text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">4</div>
+                  <div className="bg-primary-gradient text-white rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0 mt-1">4</div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg">Support</h4>
                     <p>Ongoing maintenance and optimization</p>
