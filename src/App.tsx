@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="cloud-cache-ui-theme">
+      <ThemeProvider storageKey="cloud-cache-ui-theme">
         <QueryClientProvider client={queryClient}>
           <AppRoutes />
           <Toaster />
