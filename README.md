@@ -20,9 +20,10 @@ I divided the landing page into 6 main sections:
 
 ### Design & Technical Implementation
 
-- Developed using React + TypeScript + Tailwind CSS + Shadcn for fast and scalable UI.
+- Developed using **React** + **TypeScript** + **Tailwind CSS** + **Shadcn** for fast and scalable UI.
 - Uses Framer Motion for animations and smooth transitions.
 - Implemented dark mode for better accessibility.
+- Used **Zustand** for client state management and **Tanstack query** for data fetching and asynchronous server state management.
 - [Mocked backend requests](https://github.com/dev-rathore/cloud-cache/blob/main/src/services/data.service.ts) using JavaScript Promises and setTimeout.
 - **Consistent color scheme** - Follows brand colors for a professional look.
 - **Typography** - Uses Tailwind CSS readable fonts with hierarchy (text-lg, text-base, text-sm).
